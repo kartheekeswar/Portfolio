@@ -2438,3 +2438,69 @@ input, select, textarea {
 					}
 
 	}
+	/* --- Contact form input fixes --- */
+#contact input,
+#contact textarea,
+.wrapper.style4 input,
+.wrapper.style4 textarea {
+  background: #2b2b2b;        /* dark background */
+  color: #eee;                 /* light text */
+  border: 1px solid #3a3a3a;   /* subtle border */
+  border-radius: 10px;         /* match your theme */
+  -webkit-appearance: none;    /* remove iOS default styling */
+  appearance: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #9aa0a6;              /* softer placeholder */
+}
+
+/* Focus state */
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #5e9cff;       /* highlight color */
+  box-shadow: 0 0 0 2px rgba(94,156,255,0.25);
+}
+
+/* Fix Chrome/Safari autofill turning fields white */
+#contact input:-webkit-autofill,
+#contact input:-webkit-autofill:hover,
+#contact input:-webkit-autofill:focus,
+#contact textarea:-webkit-autofill {
+  -webkit-text-fill-color: #eee;
+  -webkit-box-shadow: 0 0 0 1000px #2b2b2b inset !important;
+  box-shadow: 0 0 0 1000px #2b2b2b inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox autofill */
+#contact input:-moz-autofill,
+#contact textarea:-moz-autofill {
+  box-shadow: 0 0 0 1000px #2b2b2b inset;
+  -moz-text-fill-color: #eee;
+}
+
+/* Explicitly target email field if needed */
+#contact input[type="email"] {
+  background: #2b2b2b !important;
+  color: #eee !important;
+}
+
+/* assets/css/main.css */
+/* (…your existing CSS stays as-is…) */
+
+/* Add these at the VERY BOTTOM to enhance cards + hero spacing */
+
+/* Hero name tuning */
+#home h1 { line-height: 1.1; margin-bottom: 0.6rem; }
+#home h1 strong { font-size: 2.2em; } /* adjust 2.0–2.4 to taste */
+
+/* Project card hover polish */
+.box.style2 { transition: transform .2s ease, box-shadow .2s ease; }
+.box.style2:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+.box.style2 .image img { transition: transform .3s ease; }
+.box.style2:hover .image img { transform: scale(1.03); }
+
+/* (your contact input fixes are already here; keep them) */
