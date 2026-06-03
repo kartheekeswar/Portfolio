@@ -1,131 +1,216 @@
-<!-- projects.html -->
-<!DOCTYPE HTML>
-<!--
-  Miniport by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>All Projects – Kartheek Eswar V</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!-- cache-bust -->
-    <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  </head>
-  <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kartheek Eswar — AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
 
-    <!-- Nav (same as index) -->
-    <nav id="nav">
-      <ul class="container">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="projects.html" class="active">All Projects</a></li>
-        <li><a href="index.html#work">Work Experience</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">KE</a>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- All Projects -->
-    <article class="wrapper style3">
-      <div class="container">
-        <header>
-          <h2>All Projects</h2>
-          <p>Full portfolio of ML and Full-Stack work. Filtered highlights appear on the homepage.</p>
-        </header>
-
-        <!-- Row 1 -->
-        <div class="row">
-          <!-- Reuse/duplicate these cards as needed -->
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic01.jpg" class="image featured"><img src="images/pic01.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="projects/sign-language.html">Real-Time Sign Language Recognition</a></h3>
-              <p>BlazePose + LSTM (≈92% acc), FastAPI + Docker, 30 FPS inference.</p>
-              <p><a href="https://github.com/kartheek12001925/sign-lang-lstm" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic02.jpg" class="image featured"><img src="images/pic02.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="projects/veg-seg.html">Vegetation Segmentation (DeepLabV3+)</a></h3>
-              <p>Patch-based inference, ResNet-101 backbone, metrics dashboard.</p>
-              <p><a href="https://github.com/kartheek12001925/veg-seg" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic03.jpg" class="image featured"><img src="images/pic03.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="projects/pascal-llvm.html">Pascal → LLVM Compiler</a></h3>
-              <p>ANTLR frontend, AST traversal, LLVM IR generation.</p>
-              <p><a href="https://github.com/kartheek12001925/pascal-llvm" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-        </div>
-
-        <!-- Row 2 (add more projects here) -->
-        <div class="row">
-          <!-- Example extra projects (duplicate/edit as needed) -->
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic04.jpg" class="image featured"><img src="images/pic04.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="#">NLP Toxic Comment Classifier</a></h3>
-              <p>BiLSTM/Transformer baseline, class-weighted loss, F1-optimized thresholding.</p>
-              <p><a href="https://github.com/kartheek12001925/toxic-nlp" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic05.jpg" class="image featured"><img src="images/pic05.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="#">Computer Vision: Defect Detection</a></h3>
-              <p>Augmentations + UNet; inference pipeline with threshold tuning & PR curves.</p>
-              <p><a href="https://github.com/kartheek12001925/defect-detector" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="images/pic06.jpg" class="image featured"><img src="images/pic06.jpg" alt="Project thumbnail" /></a>
-              <h3><a href="#">Full-Stack: Inventory App</a></h3>
-              <p>Role-based access, audit logging, DataTables reporting. PHP + MySQL + Bootstrap.</p>
-              <p><a href="https://github.com/kartheek12001925/inventory-app" target="_blank" rel="noopener">GitHub</a></p>
-            </article>
-          </div>
-        </div>
-
-        <footer>
-          <p>Back to top projects on the homepage.</p>
-          <a href="index.html#projects" class="button large">Back to Home</a>
-        </footer>
+  <!-- Hero -->
+  <main id="top" class="wrapper">
+    <section class="hero">
+      <div class="hero__left">
+        <img class="avatar" src="images/portrait.jpg" alt="Portrait of Kartheek Eswar" />
       </div>
-    </article>
 
-    <!-- Footer -->
-    <article class="wrapper style4">
-      <div class="container">
-        <footer>
-          <ul id="copyright">
-            <li>&copy; <span id="year"></span> Kartheek Eswar V. All rights reserved.</li>
-            <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
-          </ul>
-        </footer>
+      <div class="hero__right">
+        <h1>Kartheek Eswar</h1>
+        <p class="subtitle">AI Engineer · ML Engineer · Full-Stack Developer</p>
+        <p class="lede">
+          AI Engineer with experience building NLP pipelines, generative AI systems,
+          and production ML applications. Currently at University of Florida building
+          healthcare AI workflows. Passionate about LLMs, MLOps, and end-to-end deployment.
+        </p>
+        <p class="links">
+          <a href="https://github.com/Kartheek321" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://huggingface.co/Kartheek321" target="_blank" rel="noopener">HuggingFace</a> ·
+          <a href="#work">See Projects</a>
+        </p>
       </div>
-    </article>
+    </section>
+  </main>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<!-- About -->
+<section id="about" class="wrapper narrow">
+  <h2>About</h2>
+  
+  <p>
+    AI Engineer at <strong>University of Florida</strong> building production ML pipelines.
+    Previously at <strong>Zoho</strong> developing NLP and conversational AI systems.
+    3+ years experience in LLMs, RAG systems, and end-to-end MLOps deployment.
+    Open to full-time <strong>AI Engineer and ML Engineer roles in 2026.</strong>
+  </p>
 
-  </body>
 
+  <table class="skills-table">
+    <tr>
+      <td class="skill-label">Languages</td>
+      <td>Python, SQL, Java, JavaScript</td>
+    </tr>
+    <tr>
+      <td class="skill-label">AI/ML</td>
+      <td>TensorFlow, PyTorch, LangChain, LangGraph, Hugging Face, MLflow, Groq API, OpenCV, Scikit-learn</td>
+    </tr>
+    <tr>
+      <td class="skill-label">Backend</td>
+      <td>FastAPI, Docker, AWS, REST APIs, CI/CD, HuggingFace Spaces</td>
+    </tr>
+    <tr>
+      <td class="skill-label">Data</td>
+      <td>Pandas, NumPy, PySpark, PostgreSQL, Redis, Vector DBs</td>
+    </tr>
+  </table>
+
+</section>
+
+
+  <!-- Projects -->
+<section id="work" class="wrapper narrow">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <!-- Project 1 -->
+    <a class="card" href="https://huggingface.co/spaces/Kartheek321/Multi-agent-coding-assistant" target="_blank" rel="noopener">
+      <h3>Multi-Agent Coding Assistant</h3>
+      <p>
+        5 specialized AI agents collaborate to deliver complete coding solutions.
+        Generates code, reviews quality, creates tests, and writes documentation
+        from a single request. Fully deployed with CI/CD pipeline.
+      </p>
+      <p><strong>Python · LangChain · Groq API · Streamlit</strong></p>
+    </a>
+
+    <!-- Project 2 -->
+    <a class="card" href="https://huggingface.co/spaces/Kartheek321/LLM-Comparison-Platform" target="_blank" rel="noopener">
+      <h3>LLM Comparison Platform</h3>
+      <p>
+        Production-ready platform comparing 6 LLM models simultaneously with
+        MLflow experiment tracking, persistent analytics, and PDF report export.
+        Fully deployed with automated CI/CD pipeline.
+      </p>
+      <p><strong>Python · Streamlit · MLflow · Groq API · Docker</strong></p>
+    </a>
+
+    <!-- Project 3 -->
+    <a class="card" href="https://github.com/kartheekeswar/Amino-Acid-Sequence-Function-Prediction" target="_blank" rel="noopener">
+      <h3>Amino Acid Sequence Function Prediction</h3>
+      <p>
+        Predicted 5,000 protein functions using TensorFlow and pre-trained ProtT5
+        embeddings on the CAFA5 dataset. Trained multi-label classification model
+        on V100 GPU optimizing binary cross-entropy loss with AUC metrics.
+      </p>
+      <p><strong>Python · TensorFlow · ProtT5 · GPU Training</strong></p>
+    </a>
+
+    <!-- Project 4 -->
+    <a class="card" href="https://github.com/kartheekeswar/Contact-Tracing-using-Machine-Learning" target="_blank" rel="noopener">
+      <h3>COVID-19 Contact Tracing Risk Prediction</h3>
+      <p>
+        Processed 21,000+ lung scan samples for COVID-19 prediction. Built
+        classification models with Scikit-learn and visualized data trends
+        using Plotly for lung opacity and pneumonia severity analysis.
+      </p>
+      <p><strong>Python · Scikit-learn · OpenCV · Plotly</strong></p>
+    </a>
+
+    <!-- Project 5 -->
+    <a class="card" href="https://github.com/kartheekeswar/Stock-Predicion-using-Machine-learning" target="_blank" rel="noopener">
+      <h3>Stock Prediction using Machine Learning</h3>
+      <p>
+        Developed machine learning models for stock trend prediction using
+        time-series analysis. Trained and evaluated models using AUC and
+        validation accuracy metrics on GPU-enabled workflows.
+      </p>
+      <p><strong>Python · TensorFlow · Time-Series · Data Visualization</strong></p>
+    </a>
+
+    <!-- Project 6 - No GitHub link yet -->
+    <div class="card">
+      <h3>Stress Detection System</h3>
+      <p>
+        Built a stress detection system using GSR and HRV sensor data achieving
+        high classification accuracy. Processed biosignal data using Pandas and
+        Scikit-learn for feature extraction and cross-validation analysis.
+        Collaborated with remote team to integrate ML model into application workflows.
+      </p>
+      <p><strong>Python · Scikit-learn · Pandas · Biosignal Processing</strong></p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Experience -->
+  <section id="experience" class="wrapper narrow">
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI Engineer</h3>
+        <p><strong>University of Florida</strong> · May 2025 - Present</p>
+        <p>
+          Building healthcare AI pipelines using Python, TensorFlow, and PySpark.
+          Implementing RAG workflows with LangChain and Amazon Bedrock.
+        </p>
+      </div>
+      <div class="card">
+        <h3>ML Engineer</h3>
+        <p><strong>Zoho</strong> · Oct 2021 - Dec 2023</p>
+        <p>
+          Developed NLP pipelines using Hugging Face transformers for multilingual
+          ticket classification. Built LangChain orchestration workflows with ChromaDB.
+        </p>
+      </div>
+      <!-- <div class="card">
+        <h3>MS Computer Science</h3>
+        <p><strong>University of Florida</strong> · Jan 2024 - Dec 2025</p>
+        <p>
+          Focusing on Machine Learning, AI systems, and Software Engineering.
+          Building portfolio projects targeting SWE and ML Engineer roles.
+        </p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="wrapper narrow">
+    <h2>Contact</h2>
+    <p>Open to full-time roles and collaborations. Let's connect!</p>
+    <div class="contact-row">
+      <a class="btn" href="mailto:vkartheekeswar@gmail.com">Email Me</a>
+      <a class="btn ghost" href="https://github.com/Kartheek321" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/vankayalapati-kartheek-eswar/" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- <a class="btn ghost" href="https://huggingface.co/Kartheek321" target="_blank" rel="noopener">HuggingFace</a> -->
+    </div>
+    <footer class="foot">
+      © <span id="year"></span> Kartheek Eswar. All rights reserved.
+    </footer>
+  </section>
+
+  <!-- Cursor-following glow -->
+  <div class="cursor-blob" aria-hidden="true"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/cursor-glow.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
 </html>
